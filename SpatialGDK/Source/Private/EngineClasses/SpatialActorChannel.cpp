@@ -122,7 +122,7 @@ bool USpatialActorChannel::CleanUp(const bool bForDestroy)
 			NetDriver->GetWorld()->WorldType == EWorldType::PIE &&
 			NetDriver->GetWorld()->bIsTearingDown &&
 			NetDriver->GetEntityRegistry()->GetActorFromEntityId(EntityId) &&
-			bDeleteDynamicEntities == true )
+			bDeleteDynamicEntities)
 		{
 			if (!IsStablyNamedEntity())
 			{
